@@ -5,7 +5,7 @@ import {ContextCart} from '../contexts/ContextCart'
 import Item from './ShoppingCartItem';
 
 function ShoppingCart() {
-	const { cart, setCart } = useContext(ContextCart)
+	const { cart } = useContext(ContextCart)
 	const getCartTotal = () => {
 		return cart.reduce((acc, value) => {
 			return acc + value.price;
